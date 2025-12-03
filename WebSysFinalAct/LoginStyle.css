@@ -1,0 +1,174 @@
+/* PAGE BACKGROUND */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Background Image */
+    background-image:
+        linear-gradient(to bottom, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 95%),
+        url('RTU_Pasig.JPG'); /* <-- keep file in the same folder */
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+/* LOGIN/REGISTER CONTAINER */
+.wrapper {
+    width: 500px;
+    max-width: calc(100% - 32px);
+    background: #e3e6f3;            /* your requested box color */
+    border-radius: 20px;
+    padding: 45px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    position: relative;
+    overflow: visible;
+    height: auto;
+    min-height: 520px;
+}
+
+/* BOTH FORMS */
+.form-box {
+    width: 100%;
+    display: none;     /* hide all forms by default */
+}
+
+/* SHOW LOGIN BY DEFAULT */
+.form-box.login {
+    display: block;
+}
+
+/* WHEN ACTIVE WRAPPER → SHOW REGISTER */
+.wrapper.active .form-box.login {
+    display: none;
+}
+.wrapper.active .form-box.register {
+    display: block;
+}
+
+/* TITLE TEXT */
+.form-box h2 {
+    font-size: 2.2em;
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+/* INPUT GROUP */
+.input-box {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 24px 0;
+}
+
+/* INPUT STYLE */
+.input-box input {
+    width: 100%;
+    padding: 15px 45px 15px 16px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 1.05em;
+    color: #1a1a1a;
+}
+
+/* FLOATING LABEL */
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #555;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.input-box input:focus ~ label,
+.input-box input:not(:placeholder-shown) ~ label {
+    top: -8px;
+    font-size: 0.8em;
+    color: #333;
+}
+
+/* SHOW/HIDE PASSWORD ICON */
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.3em;
+    color: #555;
+    opacity: 0.8;
+    z-index: 5;
+}
+
+.toggle-password:hover {
+    opacity: 1;
+}
+
+/* REMEMBER + FORGOT */
+.remember-forgot {
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* BUTTON */
+.btn {
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+    background: #1a1a1a;
+    border: none;
+    color: #fff;
+    font-size: 1.15em;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+/* LOGIN / REGISTER SWITCH */
+.login-register {
+    color: #1a1a1a;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-register a {
+    color: #555;
+    font-weight: 600;
+}
+
+/* REMOVE CLOSE ICON IF EXISTS */
+.icon-close {
+    display: none !important;
+}
+
+/* RESPONSIVE */
+@media (max-width:520px){
+    .wrapper {
+        width: calc(100% - 24px);
+        padding: 28px;
+        min-height: 560px;
+    }
+}
