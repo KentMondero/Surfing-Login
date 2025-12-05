@@ -84,7 +84,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #e3e6f3;
+  background-color: #e3e6f37a;
   padding: 20px 80px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
@@ -158,11 +158,17 @@ body {
 
 /* Home Page */
 .hero {
-    background: linear-gradient(
+    background-image: 
+    url("IMG/Background.png "),
+    linear-gradient(
         to bottom,
         rgba(255,255,255,0) 0%,
         rgba(235,240,255,1) 100%
     );
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
     width: 100%;
     position: relative;
     display: flex;
@@ -250,7 +256,7 @@ body {
     text-align: center;
     padding: 25px 15px;
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
-    border: 1px solid #cced7d0;
+    border: 1px solid #6262b9;
     border-radius: 4px;
     margin: 15px 0;
     opacity: 0;                     
@@ -273,7 +279,7 @@ body {
     line-height: 1;
     border-radius: 4px;
     color: #1a1a1a;
-    background-color: #fddde4;
+    background-color: #6262b9;
 }
 
 #feature .fe-box:nth-child(2) h6 { background-color: #cdebbc; }
@@ -497,117 +503,158 @@ body {
     font-size: 15px;
 }
 
-#newsletter{
+/*Footer New*/
+/* Compact Footer container */
+footer.section-p1 {
+    margin-top: 80px;
+    background-color: #c5d8f1;
+    padding: 25px 0; /* smaller top/bottom padding */
+    color: black;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.5px;
+    position: sticky;
+    z-index: 999;
+}
+
+/* Footer content row */
+footer .footer-content {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
-    background-image: url("b14.png");
-    background-repeat: no-repeat;
-    background-position: 20% 30%;
-    background-color: #041e42;
+    justify-content: space-between;
+    gap: 5px;
 }
 
-#newsletter h4{
-    font-size: 22px;
-    font-weight: 700;
-    color: #fff;
+/* Columns */
+footer .col {
+    flex: 1 1 150px;
+    margin-bottom: 2px;
 }
 
-#newsletter p{
-    font-size: 14px;
+/* Headings */
+footer h4 {
+    font-size: 17px;
     font-weight: 600;
-    color: #818ea0;
+    margin-bottom: 3px;
+    line-height: 1.2;
 }
 
-#newsletter p span{
-    color: #ffbd27;
+/* Paragraphs (contact info) */
+footer .col p {
+    font-size: 10px;
+    line-height: 2.0;
+    margin-bottom: 2px;
 }
 
-#newsletter .form{
+/* Links */
+footer a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 4px;
+    font-size: 10px;
+}
+
+footer a:hover {
+    color: #088178;
+    text-decoration: underline;
+}
+
+/* Social Icons */
+footer .icon i {
+    margin-right: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* Social Icon Hovers */
+footer .icon i.fa-facebook-f:hover { color: #3b5998; text-shadow: 0 0 3px rgba(59,89,152,0.6); }
+footer .icon i.fa-x-twitter:hover { color: #1D9BF0; text-shadow: 0 0 3px rgba(29,155,240,0.6); }
+footer .icon i.fa-instagram:hover { color: #c13584; text-shadow: 0 0 3px rgba(193,53,132,0.6); }
+footer .icon i.fa-youtube:hover { color: #ff0000; text-shadow: 0 0 3px rgba(255,0,0,0.6); }
+
+/* About & My Account inline */
+footer .links {
+    padding-top: 15px;
     display: flex;
-    width: 40%;
+    gap: 30px;
 }
 
-#newsletter input{
-    height: 3.125rem;
-    padding: 0 1.25em;
-    font-size: 14px;
-    width: 100%;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    outline: none;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+/* Social section inside contact column */
+footer .col.contact .social {
+    margin-top: 4px; /* space between hours and icons */
 }
 
-#newsletter button{
-    background-color: #088178;
-    color: #fff;
-    white-space: nowrap;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+footer .col.contact .social h4 {
+    font-size: 10px;
+    margin-bottom: 2px;
 }
 
-footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+/* Copyright */
+/* Compact Copyright */
+footer .copyright {
+    text-align: center;
+    font-size: 10px;         /* smaller text */
+    margin-top: 1px;        /* less space above */
+    padding-top: 1px;       /* less padding above */
+    border-top: 1px solid rgba(0,0,0,0.2); /* optional thin border */
 }
 
-footer .col{
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    footer .footer-content {
+        flex-direction: column;
+    }
+    footer .links {
+        flex-direction: column;
+        gap: 8px;
+    }
+    footer .col.contact .logo {
+        margin: 0 auto 5px auto; /* center logo */
+    }
+    footer .col.contact .social {
+        text-align: center; /* center social icons */
+    }
+}
+/* Make body full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Use flex layout to push footer down */
+body {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px;
 }
 
-footer .logo{
-    margin-bottom: 30px;
+/* Main content grows to fill space */
+main {
+    flex: 1;
 }
 
-footer h4{
-    font-size: 14px;
-    padding-bottom: 20px;
+/* Footer stays compact at the bottom */
+footer.section-p1 {
+    flex-shrink: 0;
+    padding: 6px 20px; /* minimal top/bottom padding */
+    background-color: #c5d8f1;
 }
 
-footer p{
-    font-size: 13px;
-    margin: 0 0 8px 0;
-}
-
-footer a{
-    font-size: 13px;
-    text-decoration: none;
-    color: #222;
-    margin-bottom: 10px;
-}
-
-footer .follow{
-    margin-top: 20px;
-}
-
-footer .follow i{
-    color: #465b52;
-    padding-right: 4px;
-    cursor: pointer;
-}
-
-footer .install .row img{
-    border: 1px solid #088178;
-    border-radius: 6px;
-}
-
-footer .install img{
-    margin: 10px 0 15px 0;
-}
-
-footer .follow i:hover,
-footer a:hover{
-    color: #088178;
-}
-
-footer .copyright{
+/* Put the logo column on the far right */
+footer .links {
+    display: flex;
     width: 100%;
-    text-align: center;
+    justify-content: space-between;   /* content left, logo right */
+    align-items: stretch;             /* make children match footer height */
+    margin-left: 4%;
+    margin: 10;
+}
+
+/* Make the logo fill the full height of the footer */
+footer .links .logo {
+    height: auto;         /* fill footer height */
+    width: 220px;          /* keep proportions */
+    object-fit: contain;  /* fit without distortion */
 }
