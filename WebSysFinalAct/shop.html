@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop | Cerfing (RTU)</title>
+
+  <!-- Font Awesome for stars & icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="shop.css" />
+</head>
+<body>
+  
+  <!-- Header Section -->
+<section id="header">
+  <a href="#"><img src="Surfing_Logo.png" class="logo" alt="Surfing Logo"></a>
+
+  <ul id="navbar">
+    <li><a href="home.html">Home</a></li>
+    <li><a class="active" href="shop.html">Shop</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="cart.html"><i class="fa fa-bag-shopping"></i></a></li>
+    <li><a href="Login.html"><img src="User_Image.png" class="user-img" alt="User"></a></li>
+  </ul>
+
+  <!-- Mobile Menu -->
+  <div id="mobile">
+    <a href="cart.html"><i class="fa fa-bag-shopping"></i></a>
+    <i id="bar" class="fas fa-bars"></i>
+  </div>
+</section>
+
+
+  <!-- Products grid -->
+
+    <h2 class="center-heading">Uniforms</h2>
+    <section class="shop-section section-p1">
+    <div class="pro-container">
+
+      <!-- NSTP Shirt -->
+      <div class="pro uniform">
+        <img src="images/nstpfront.jpg" alt="NSTP front" class="card-img" onmouseover="this.src='images/nstpback.jpg'" onmouseout="this.src='images/nstpfront.jpg'">
+        <div class="des">
+          <span class="rtu-label">RTU</span>
+          <h5>NSTP Shirt</h5>
+          <div class="star"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+          <h4>₱355.00</h4>
+          <button class="open-modal-btn" data-target="modal-nstp">View</button>
+        </div>
+      </div>
+
+      <!-- PE Shirt -->
+      <div class="pro uniform">
+        <img src="images/pefront.jpg" alt="PE front" class="card-img" onmouseover="this.src='images/peback.jpg'" 
+        onmouseout="this.src='images/pefront.jpg'">
+        <div class="des">
+          <span class="rtu-label">RTU</span>
+          <h5>PE Shirt</h5>
+          <div class="star"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+          <h4>₱355.00</h4>
+          <button class="open-modal-btn" data-target="modal-pe-shirt">View</button>
+        </div>
+      </div>
+
+      <!-- PE Pants -->
+      <div class="pro uniform">
+        <img src="images/pepantsfront.jpg" alt="PE Pants" class="card-img" onmouseover="this.src='images/pepantsback.jpg'" 
+        onmouseout="this.src='images/pepantsfront.jpg'">
+        <div class="des">
+          <span class="rtu-label">RTU</span>
+          <h5>PE Pants</h5>
+          <div class="star"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+          <h4>₱450.00</h4>
+          <button class="open-modal-btn" data-target="modal-pe-pants">View</button>
+        </div>
+      </div>
+
+      <!-- Mens Polo -->
+      <div class="pro uniform">
+        <img src="images/Mens Polo.jpg" alt="Mens Polo" class="card-img">
+        <div class="des">
+          <span class="rtu-label">RTU</span>
+          <h5>Mens Polo</h5>
+          <div class="star"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+          <h4>₱515.00</h4>
+          <button class="open-modal-btn" data-target="modal-mens-polo">View</button>
+        </div>
+      </div>
+
+      <!-- Womens Blouse -->
+      <div class="pro uniform">
+        <img src="images/Womens Blouse.jpg" alt="Womens Blouse" class="card-img">
+        <div class="des">
+          <span class="rtu-label">RTU</span>
+          <h5>Womens Blouse</h5>
+          <div class="star"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+          <h4>₱525.00</h4>
+          <button class="open-modal-btn" data-target="modal-womens-blouse">View</button>
+        </div>
+      </div>
+
+      <!-- Women Pants -->
+      <div class="pro uniform">
+        <img src="images/womenpants.jpg" alt="Women Pants" class="card-img">
+        <div class="des">
+          <span class="rtu-label">RTU</span>
+          <h5>Women Pants</h5>
+          <div class="star"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+          <h4>₱510.00</h4>
+          <button class="open-modal-btn" data-target="modal-women-pants">View</button>
+        </div>
+      </div>
+
+      <!-- Women Skirt -->
+      <div class="pro uniform">
+        <img src="images/womenskirt.jpg" alt="Women Skirt" class="card-img">
+        <div class="des">
+          <span class="rtu-label">RTU</span>
+          <h5>Women Skirt</h5>
+          <div class="star"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+          <h4>₱425.00</h4>
+          <button class="open-modal-btn" data-target="modal-women-skirt">View</button>
+        </div>
+      </div>
+
+      <!-- Men Pants -->
+      <div class="pro uniform">
+        <img src="images/menpants.jpg" alt="Men Pants" class="card-img">
+        <div class="des">
+          <span class="rtu-label">RTU</span>
+          <h5>Men Pants</h5>
+          <div class="star"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+          <h4>₱530.00</h4>
+          <button class="open-modal-btn" data-target="modal-men-pants">View</button>
+        </div>
+      </div>
+
+      </section>
+
+      <h2 class="center-heading">Merch</h2>
+      <section class="shop-section section-p1">
+      <div class="pro-container">
+
+      <!-- ID Case -->
+      <div class="pro merch" data-category="merch">
+        <img src="images/idcase.jpg" alt="ID Case" class="card-img">
+        <div class="des">
+          <span class="rtu-label">RTU</span>
+          <h5>ID Case</h5>
+          <div class="star"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+          <h4>₱35.00</h4>
+          <button class="open-modal-btn" data-target="modal-idcase">View</button>
+        </div>
+      </div>
+
+      <!-- Varsity Jacket -->
+      <div class="pro merch" data-category="merch">
+        <img src="images/jacketf.jpg" alt="Varsity Jacket" class="card-img" onmouseover="this.src='images/jacketb.jpg'" 
+        onmouseout="this.src='images/jacketf.jpg'">
+        <div class="des">
+          <span class="rtu-label">RTU</span>
+          <h5>Varsity Jacket</h5>
+          <div class="star"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+          <h4>₱800.00</h4>
+          <button class="open-modal-btn" data-target="modal-varsity">View</button>
+        </div>
+      </div>
+
+      <!-- Lanyard (2 types) -->
+      <div class="pro merch" data-category="merch">
+        <img src="images/lanyard1.jpg" alt="Lanyard" class="card-img" onmouseover="this.src='images/lanyard2.jpg'" 
+        onmouseout="this.src='images/lanyard1.jpg'">
+        <div class="des">
+          <span class="rtu-label">RTU</span>
+          <h5>ID Lanyard</h5>
+          <div class="star"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+          <h4>₱100.00</h4>
+          <button class="open-modal-btn" data-target="modal-lanyard">View</button>
+        </div>
+      </div>
+
+      <!-- Mugs -->
+      <div class="pro merch" data-category="merch">
+        <img src="images/mugb.jpg" alt="Mug" class="card-img" onmouseover="this.src='images/mugw.jpg'" 
+        onmouseout="this.src='images/mugb.jpg'">
+        <div class="des">
+          <span class="rtu-label">RTU</span>
+          <h5>Mug</h5>
+          <div class="star"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+          <h4>₱150.00</h4>
+          <button class="open-modal-btn" data-target="modal-mug">View</button>
+        </div>
+      </div>
+
+      <!-- Pin (3 types) -->
+      <div class="pro merch" data-category="merch">
+        <img src="images/pin1.jpg" alt="Pin" class="card-img" onmouseover="this.src='images/pin1.jpg'" 
+        onmouseout="this.src='images/pin2.jpg'">
+        <div class="des">
+          <span class="rtu-label">RTU</span>
+          <h5>Pin</h5>
+          <div class="star"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+          <h4>₱50.00</h4>
+          <button class="open-modal-btn" data-target="modal-pin">View</button>
+        </div>
+      </div>
+
+      <!-- Tumbler -->
+      <div class="pro merch" data-category="merch">
+        <img src="images/tumblerb.jpg" alt="Tumbler" class="card-img" onmouseover="this.src='images/tumblerw.jpg'" 
+        onmouseout="this.src='images/tumblerb.jpg'">
+        <div class="des">
+          <span class="rtu-label">RTU</span>
+          <h5>Tumbler</h5>
+          <div class="star"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+          <h4>₱250.00</h4>
+          <button class="open-modal-btn" data-target="modal-tumbler">View</button>
+        </div>
+      </div>
+
+    <!-- Yellow Pad -->
+    <div class="pro merch">
+      <img src="images/yellowpad.jpg" alt="Yellow Pad" class="card-img">
+      <div class="des">
+        <span class="rtu-label">RTU</span>
+        <h5>Yellow Pad</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <h4>₱45.00</h4>
+        <button class="open-modal-btn" data-target="modal-yellowpad">View</button>
+      </div>
+    </div>
+
+    <!-- Pencil -->
+    <div class="pro merch">
+      <img src="images/pencil.jpg" alt="Pencil" class="card-img">
+      <div class="des">
+        <span class="rtu-label">RTU</span>
+        <h5>Pencil</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <h4>₱10.00</h4>
+        <button class="open-modal-btn" data-target="modal-pencil">View</button>
+      </div>
+    </div>
+
+    <!-- Ballpen -->
+    <div class="pro merch">
+      <img src="images/delibp.jpg" alt="Ballpen" class="card-img">
+      <div class="des">
+        <span class="rtu-label">RTU</span>
+        <h5>Ballpen</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <h4>₱15.00</h4>
+        <button class="open-modal-btn" data-target="modal-ballpen">View</button>
+      </div>
+    </div>
+
+    <!-- Notebook -->
+    <div class="pro merch">
+      <img src="images/notebook.jpg" alt="Notebook" class="card-img">
+      <div class="des">
+        <span class="rtu-label">RTU</span>
+        <h5>Notebook</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <h4>₱70.00</h4>
+        <button class="open-modal-btn" data-target="modal-notebook">View</button>
+      </div>
+    </div>
+
+    <!-- Bondpaper -->
+    <div class="pro merch">
+      <img src="images/bondpaper.jpg" alt="Bondpaper" class="card-img">
+      <div class="des">
+        <span class="rtu-label">RTU</span>
+        <h5>Bondpaper</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <h4>₱120.00</h4>
+        <button class="open-modal-btn" data-target="modal-bondpaper">View</button>
+      </div>
+    </div>
+  </div>
+
+  </section>
+
+  <!-- ========================= All product modals ========================= -->
+
+  <!-- NSTP Shirt Modal -->
+<div id="modal-nstp" class="modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-left">
+      <img src="images/nstpfront.jpg" class="modal-main-img" id="nstp-main">
+      <div class="modal-thumbs">
+        <img src="images/nstpfront.jpg" onclick="swapImage('nstp-main', this.src)">
+        <img src="images/nstpback.jpg" onclick="swapImage('nstp-main', this.src)">
+        <img src="images/sizenstp.jpg" onclick="swapImage('nstp-main', this.src)">
+      </div>
+    </div>
+    <div class="modal-right">
+      <h3>NSTP Shirt</h3>
+      <p class="modal-rtu">RTU</p>
+      <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="modal-desc">RTU NSTP shirt, soft breathable fabric.</p>
+      <p class="modal-price">₱355.00</p>
+      <label>Size</label>
+      <select id="nstp-size">
+        <option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option>
+      </select>
+      <label>Quantity</label>
+      <input type="number" id="nstp-qty" min="1" value="1">
+      <button class="add-cart" onclick="addToCartFromModal({id:'nstp', name:'NSTP Shirt', price:355, image:document.getElementById('nstp-main').src, size:document.getElementById('nstp-size').value, qty:parseInt(document.getElementById('nstp-qty').value)})">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- PE Shirt Modal -->
+<div id="modal-pe-shirt" class="modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-left">
+      <img src="images/pefront.jpg" class="modal-main-img" id="pe-main">
+      <div class="modal-thumbs">
+        <img src="images/pefront.jpg" onclick="swapImage('pe-main', this.src)">
+        <img src="images/peback.jpg" onclick="swapImage('pe-main', this.src)">
+        <img src="images/sizepeshirt.jpg" onclick="swapImage('pe-main', this.src)">
+      </div>
+    </div>
+    <div class="modal-right">
+      <h3>PE Shirt</h3>
+      <p class="modal-rtu">RTU</p>
+      <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="modal-desc">Lightweight and breathable RTU PE shirt, ideal for sports and physical activities.</p>
+      <p class="modal-price">₱355.00</p>
+      <label>Size</label>
+      <select id="pe-size">
+        <option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option>
+      </select>
+      <label>Quantity</label>
+      <input type="number" id="pe-qty" min="1" value="1">
+      <button class="add-cart" onclick="addToCartFromModal({id:'pe_shirt', name:'PE Shirt', price:355, image:document.getElementById('pe-main').src, size:document.getElementById('pe-size').value, qty:parseInt(document.getElementById('pe-qty').value)})">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- PE Pants Modal -->
+<div id="modal-pe-pants" class="modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-left">
+      <img src="images/pepantsfront.jpg" class="modal-main-img" id="pepants-main">
+      <div class="modal-thumbs">
+        <img src="images/pepantsfront.jpg" onclick="swapImage('pepants-main', this.src)">
+        <img src="images/pepantsback.jpg" onclick="swapImage('pepants-main', this.src)">
+        <img src="images/pepantsleft.jpg" onclick="swapImage('pepants-main', this.src)">
+        <img src="images/pepantsright.jpg" onclick="swapImage('pepants-main', this.src)">
+        <img src="images/sizepepants.jpg" onclick="swapImage('pepants-main', this.src)">
+      </div>
+    </div>
+    <div class="modal-right">
+      <h3>PE Pants</h3>
+      <p class="modal-rtu">RTU</p>
+      <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="modal-desc">Comfortable and flexible RTU PE pants, perfect for workouts and gym sessions.</p>
+      <p class="modal-price">₱450.00</p>
+      <label>Size</label>
+      <select id="pepants-size">
+        <option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option>
+      </select>
+      <label>Quantity</label>
+      <input type="number" id="pepants-qty" min="1" value="1">
+      <button class="add-cart" onclick="addToCartFromModal({id:'pe_pants', name:'PE Pants', price:450, image:document.getElementById('pepants-main').src, size:document.getElementById('pepants-size').value, qty:parseInt(document.getElementById('pepants-qty').value)})">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Mens Polo Modal -->
+<div id="modal-mens-polo" class="modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-left">
+      <img src="images/Mens Polo.jpg" class="modal-main-img" id="polo-main">
+      <div class="modal-thumbs">
+        <img src="images/Mens Polo.jpg" onclick="swapImage('polo-main', this.src)">
+        <img src="images/unimen2.jpg" onclick="swapImage('polo-main', this.src)" onerror="this.style.display='none'">
+        <img src="images/sizepolo.jpg" onclick="swapImage('polo-main', this.src)">
+      </div>
+    </div>
+    <div class="modal-right">
+      <h3>Mens Polo</h3>
+      <p class="modal-rtu">RTU</p>
+      <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="modal-desc">Official RTU mens polo, comfortable and perfect for school or casual activities.</p>
+      <p class="modal-price">₱515.00</p>
+      <label>Size</label>
+      <select id="polo-size">
+        <option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option>
+      </select>
+      <label>Quantity</label>
+      <input type="number" id="polo-qty" min="1" value="1">
+      <button class="add-cart" onclick="addToCartFromModal({id:'mens_polo', name:'Mens Polo', price:515, image:document.getElementById('polo-main').src, size:document.getElementById('polo-size').value, qty:parseInt(document.getElementById('polo-qty').value)})">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+  <!-- Womens Blouse Modal -->
+<div id="modal-womens-blouse" class="modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-left">
+      <img src="images/Womens Blouse.jpg" class="modal-main-img" id="blouse-main">
+      <div class="modal-thumbs">
+        <img src="images/Womens Blouse.jpg" onclick="swapImage('blouse-main', this.src)">
+        <img src="images/blouse2.jpg" onclick="swapImage('blouse-main', this.src)" onerror="this.style.display='none'">
+        <img src="images/sizeblouse.jpg" onclick="swapImage('blouse-main', this.src)">
+      </div>
+    </div>
+    <div class="modal-right">
+      <h3>Womens Blouse</h3>
+      <p class="modal-rtu">RTU</p>
+      <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="modal-desc">Official RTU womens blouse, neat and lightweight for a professional look.</p>
+      <p class="modal-price">₱525.00</p>
+      <label>Size</label>
+      <select id="blouse-size">
+        <option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option>
+      </select>
+      <label>Quantity</label>
+      <input type="number" id="blouse-qty" min="1" value="1">
+      <button class="add-cart" onclick="addToCartFromModal({id:'womens_blouse', name:'Womens Blouse', price:525, image:document.getElementById('blouse-main').src, size:document.getElementById('blouse-size').value, qty:parseInt(document.getElementById('blouse-qty').value)})">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Women Pants Modal -->
+<div id="modal-women-pants" class="modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-left">
+      <img src="images/womenpants.jpg" class="modal-main-img" id="womenpants-main">
+      <div class="modal-thumbs">
+        <img src="images/womenpants.jpg" onclick="swapImage('womenpants-main', this.src)">
+        <img src="images/sizewpants.jpg" onclick="swapImage('womenpants-main', this.src)">
+      </div>
+    </div>
+    <div class="modal-right">
+      <h3>Women Pants</h3>
+      <p class="modal-rtu">RTU</p>
+      <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="modal-desc">RTU womens uniform pants, practical and suitable for regular campus activities.</p>
+      <p class="modal-price">₱510.00</p>
+      <label>Size</label>
+      <select id="womenpants-size">
+        <option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option>
+      </select>
+      <label>Quantity</label>
+      <input type="number" id="womenpants-qty" min="1" value="1">
+      <button class="add-cart" onclick="addToCartFromModal({id:'women_pants', name:'Women Pants', price:510, image:document.getElementById('womenpants-main').src, size:document.getElementById('womenpants-size').value, qty:parseInt(document.getElementById('womenpants-qty').value)})">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Women Skirt Modal -->
+<div id="modal-women-skirt" class="modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-left">
+      <img src="images/womenskirt.jpg" class="modal-main-img" id="womenskirt-main">
+      <div class="modal-thumbs">
+        <img src="images/womenskirt.jpg" onclick="swapImage('womenskirt-main', this.src)">
+        <img src="images/sizeskirt.jpg" onclick="swapImage('womenskirt-main', this.src)">
+      </div>
+    </div>
+    <div class="modal-right">
+      <h3>Women Skirt</h3>
+      <p class="modal-rtu">RTU</p>
+      <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="modal-desc">RTU womens skirt, modest and comfortable for everyday school wear</p>
+      <p class="modal-price">₱425.00</p>
+      <label>Size</label>
+      <select id="womenskirt-size">
+        <option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option>
+      </select>
+      <label>Quantity</label>
+      <input type="number" id="womenskirt-qty" min="1" value="1">
+      <button class="add-cart" onclick="addToCartFromModal({id:'women_skirt', name:'Women Skirt', price:425, image:document.getElementById('womenskirt-main').src, size:document.getElementById('womenskirt-size').value, qty:parseInt(document.getElementById('womenskirt-qty').value)})">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Men Pants Modal -->
+<div id="modal-men-pants" class="modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-left">
+      <img src="images/menpants.jpg" class="modal-main-img" id="menpants-main">
+      <div class="modal-thumbs">
+        <img src="images/menpants.jpg" onclick="swapImage('menpants-main', this.src)">
+        <img src="images/sizempants.jpg" onclick="swapImage('menpants-main', this.src)">
+      </div>
+    </div>
+    <div class="modal-right">
+      <h3>Men Pants</h3>
+      <p class="modal-rtu">RTU</p>
+      <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="modal-desc">RTU mens uniform pants, durable and suitable for daily campus use.</p>
+      <p class="modal-price">₱530.00</p>
+      <label>Size</label>
+      <select id="menpants-size">
+        <option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option>
+      </select>
+      <label>Quantity</label>
+      <input type="number" id="menpants-qty" min="1" value="1">
+      <button class="add-cart" onclick="addToCartFromModal({id:'men_pants', name:'Men Pants', price:530, image:document.getElementById('menpants-main').src, size:document.getElementById('menpants-size').value, qty:parseInt(document.getElementById('menpants-qty').value)})">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- ID Case Modal -->
+<div id="modal-idcase" class="modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-left">
+      <img src="images/idcase.jpg" class="modal-main-img" id="idcase-main">
+      <div class="modal-thumbs">
+        <img src="images/idcase.jpg" onclick="swapImage('idcase-main', this.src)">
+      </div>
+    </div>
+    <div class="modal-right">
+      <h3>ID Case</h3>
+      <p class="modal-rtu">RTU</p>
+      <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="modal-desc">Protective ID case for your student ID.</p>
+      <p class="modal-price">₱35.00</p>
+
+      <label>Color</label>
+      <select id="idcase-color">
+        <option>Blue</option>
+        <option>White</option>
+        <option>Black</option>
+      </select>
+
+      <label>Quantity</label>
+      <input type="number" id="idcase-qty" min="1" value="1">
+      
+      <button class="add-cart" onclick="addToCartFromModal({id:'id_case', name:'ID Case', price:35, image:document.getElementById('idcase-main').src, color: document.getElementById('idcase-color').value, qty:parseInt(document.getElementById('idcase-qty').value)})">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Varsity Jacket Modal -->
+<div id="modal-varsity" class="modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-left">
+      <img src="images/jacketf.jpg" class="modal-main-img" id="varsity-main">
+      <div class="modal-thumbs">
+        <img src="images/jacketf.jpg" onclick="swapImage('varsity-main', this.src)">
+        <img src="images/jacketb.jpg" onclick="swapImage('varsity-main', this.src)">
+        <img src="images/sizepolo.jpg" onclick="swapImage('varsity-main', this.src)">
+      </div>
+    </div>
+    <div class="modal-right">
+      <h3>Varsity Jacket</h3>
+      <p class="modal-rtu">RTU</p>
+      <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="modal-desc">Stylish RTU varsity jacket, warm and perfect for school events or casual wear.</p>
+      <p class="modal-price">₱800.00</p>
+      <label>Size</label>
+      <select id="varsity-size">
+        <option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option><option>3XL</option>
+      </select>
+      <label>Quantity</label>
+      <input type="number" id="varsity-qty" min="1" value="1">
+      
+      <button class="add-cart" onclick="addToCartFromModal({id:'varsity', name:'Varsity Jacket', price:800, image:document.getElementById('varsity-main').src, size:document.getElementById('varsity-size').value, qty:parseInt(document.getElementById('varsity-qty').value)})">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Lanyard Modal -->
+<div id="modal-lanyard" class="modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-left">
+      <img src="images/lanyard1.jpg" class="modal-main-img" id="lanyard-main">
+      <div class="modal-thumbs">
+        <img src="images/lanyard1.jpg" onclick="swapImage('lanyard-main', this.src)">
+        <img src="images/lanyard2.jpg" onclick="swapImage('lanyard-main', this.src)">
+      </div>
+    </div>
+    <div class="modal-right">
+      <h3>Lanyard</h3>
+      <p class="modal-rtu">RTU</p>
+      <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="modal-desc">Durable RTU lanyard, ideal for IDs, keys, or badges.</p>
+      <p class="modal-price">₱85.00</p>
+
+      <label>Type</label>
+      <select id="lanyard-type">
+        <option value="Lanyard 1">Lanyard 1</option>
+        <option value="Lanyard 2">Lanyard 2</option>
+      </select>
+
+      <label>Quantity</label>
+      <input type="number" id="lanyard-qty" min="1" value="1">
+
+      <button class="add-cart" onclick="addToCartFromModal({id:'lanyard', name:'Lanyard', price:85, image:document.getElementById('lanyard-main').src, type:document.getElementById('lanyard-type').value, qty:parseInt(document.getElementById('lanyard-qty').value)})">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Mug Modal -->
+<div id="modal-mug" class="modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-left">
+      <img src="images/mugb.jpg" class="modal-main-img" id="mug-main">
+      <div class="modal-thumbs">
+        <img src="images/mugb.jpg" onclick="swapImage('mug-main', this.src)">
+        <img src="images/mugw.jpg" onclick="swapImage('mug-main', this.src)">
+      </div>
+    </div>
+    <div class="modal-right">
+      <h3>Mug</h3>
+      <p class="modal-rtu">RTU</p>
+      <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="modal-desc">Official RTU mug, perfect for coffee, tea, or hot chocolate.</p>
+      <p class="modal-price">₱150.00</p>
+
+      <label>Color</label>
+      <select id="mug-color">
+        <option>Black</option>
+        <option>White</option>
+      </select>
+
+      <label>Quantity</label>
+      <input type="number" id="mug-qty" min="1" value="1">
+
+      <button class="add-cart" onclick="addToCartFromModal({id:'mug', name:'Mug', price:150, image:document.getElementById('mug-main').src, color:document.getElementById('mug-color').value, qty:parseInt(document.getElementById('mug-qty').value)})">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Pin Modal -->
+<div id="modal-pin" class="modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-left">
+      <img src="images/pin1.jpg" class="modal-main-img" id="pin-main">
+      <div class="modal-thumbs">
+        <img src="images/pin1.jpg" onclick="swapImage('pin-main', this.src)">
+        <img src="images/pin2.jpg" onclick="swapImage('pin-main', this.src)">
+        <img src="images/pin3.jpg" onclick="swapImage('pin-main', this.src)">
+      </div>
+    </div>
+    <div class="modal-right">
+      <h3>Pin</h3>
+      <p class="modal-rtu">RTU</p>
+      <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="modal-desc">RTU enamel pin, a small but stylish way to show your school pride.</p>
+      <p class="modal-price">₱50.00</p>
+
+      <label>Style</label>
+      <select id="pin-style">
+        <option>Pin 1</option>
+        <option>Pin 2</option>
+        <option>Pin 3</option>
+      </select>
+
+      <label>Quantity</label>
+      <input type="number" id="pin-qty" min="1" value="1">
+
+      <button class="add-cart" onclick="addToCartFromModal({id:'pin', name:'Pin', price:50, image:document.getElementById('pin-main').src, style:document.getElementById('pin-style').value, qty:parseInt(document.getElementById('pin-qty').value)})">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Tumbler Modal -->
+<div id="modal-tumbler" class="modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-left">
+      <img src="images/tumblerb.jpg" class="modal-main-img" id="tumbler-main">
+      <div class="modal-thumbs">
+        <img src="images/tumblerb.jpg" onclick="swapImage('tumbler-main', this.src)">
+        <img src="images/tumblerw.jpg" onclick="swapImage('tumbler-main', this.src)">
+      </div>
+    </div>
+    <div class="modal-right">
+      <h3>Tumbler</h3>
+      <p class="modal-rtu">RTU</p>
+      <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="modal-desc">RTU tumbler, keeps drinks hot or cold, ideal for everyday use.</p>
+      <p class="modal-price">₱250.00</p>
+
+      <label>Color</label>
+      <select id="tumblers-color">
+        <option>Black</option>
+        <option>Metallic</option>
+      </select>
+
+      <label>Quantity</label>
+      <input type="number" id="tumbler-qty" min="1" value="1">
+
+      <button class="add-cart" onclick="addToCartFromModal({id:'tumbler', name:'Tumbler', price:250, image:document.getElementById('tumbler-main').src, color:getElementById('tumbler-color').value, qty:parseInt(document.getElementById('tumbler-qty').value)})">Add to Cart</button>
+    </div>
+  </div>
+  </div>
+
+<!-- Yellow Pad Modal -->
+<div id="modal-yellowpad" class="modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-left">
+      <img src="images/yellowpad.jpg" class="modal-main-img" id="yellowpad-main">
+      <div class="modal-thumbs">
+        <img src="images/yellowpad.jpg" onclick="swapImage('yellowpad-main', this.src)">
+      </div>
+    </div>
+    <div class="modal-right">
+      <h3>Yellow Pad</h3>
+      <p class="modal-rtu">RTU</p>
+      <div class="star">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <p class="modal-desc">Classic ruled yellow pad, perfect for notes and lectures.</p>
+      <p class="modal-price">₱45.00</p>
+
+      <label>Quantity</label>
+      <input type="number" id="yellowpad-qty" min="1" value="1">
+
+      <button class="add-cart" onclick="addToCartFromModal({
+          id:'yellowpad',
+          name:'Yellow Pad',
+          price:45,
+          image:document.getElementById('yellowpad-main').src,
+          qty:parseInt(document.getElementById('yellowpad-qty').value)
+      })">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Pencil Modal -->
+<div id="modal-pencil" class="modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-left">
+      <img src="images/pencil.jpg" class="modal-main-img" id="pencil-main">
+      <div class="modal-thumbs">
+        <img src="images/pencil.jpg" onclick="swapImage('pencil-main', this.src)">
+      </div>
+    </div>
+    <div class="modal-right">
+      <h3>Pencil</h3>
+      <p class="modal-rtu">RTU</p>
+      <div class="star">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <p class="modal-desc">Classic graphite pencil, smooth writing and easy to erase. Ideal for school or office use.</p>
+      <p class="modal-price">₱10.00</p>
+
+      <label>Quantity</label>
+      <input type="number" id="pencil-qty" min="1" value="1">
+
+      <button class="add-cart" onclick="addToCartFromModal({
+          id:'pencil',
+          name:'Pencil',
+          price:10,
+          image:document.getElementById('pencil-main').src,
+          qty:parseInt(document.getElementById('pencil-qty').value)
+      })">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Ballpen Modal -->
+<div id="modal-ballpen" class="modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-left">
+      <img src="images/delibp.jpg" class="modal-main-img" id="ballpen-main">
+      <div class="modal-thumbs">
+        <img src="images/delibp.jpg" onclick="swapImage('ballpen-main', this.src)">
+      </div>
+    </div>
+    <div class="modal-right">
+      <h3>Ballpen</h3>
+      <p class="modal-rtu">RTU</p>
+      <div class="star">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <p class="modal-desc">Smooth ink ballpen for everyday writing. Comfortable grip and long-lasting ink.</p>
+      <p class="modal-price">₱15.00</p>
+
+      <label>Color</label>
+      <select id="ballpen-color">
+        <option>Black</option>
+        <option>Red</option>
+        <option>Blue</option>
+      </select>
+
+      <label>Quantity</label>
+      <input type="number" id="ballpen-qty" min="1" value="1">
+
+      <button class="add-cart" onclick="addToCartFromModal({
+          id:'ballpen',
+          name:'Ballpen',
+          price:15,
+          image:document.getElementById('ballpen-main').src,
+          qty:parseInt(document.getElementById('ballpen-qty').value)
+      })">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Notebook Modal -->
+<div id="modal-notebook" class="modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-left">
+      <img src="images/notebook.jpg" class="modal-main-img" id="notebook-main">
+      <div class="modal-thumbs">
+        <img src="images/notebook.jpg" onclick="swapImage('notebook-main', this.src)">
+      </div>
+    </div>
+    <div class="modal-right">
+      <h3>Notebook</h3>
+      <p class="modal-rtu">RTU</p>
+      <div class="star">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <p class="modal-desc">Durable notebook with lined pages. Great for taking notes, journaling, or school projects.</p>
+      <p class="modal-price">₱70.00</p>
+
+      <label>Quantity</label>
+      <input type="number" id="notebook-qty" min="1" value="1">
+
+      <button class="add-cart" onclick="addToCartFromModal({
+          id:'notebook',
+          name:'Notebook',
+          price:70,
+          image:document.getElementById('notebook-main').src,
+          qty:parseInt(document.getElementById('notebook-qty').value)
+      })">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Bondpaper Modal -->
+<div id="modal-bondpaper" class="modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-left">
+      <img src="images/bondpaper.jpg" class="modal-main-img" id="bondpaper-main">
+      <div class="modal-thumbs">
+        <img src="images/bondpaper.jpg" onclick="swapImage('bondpaper-main', this.src)">
+      </div>
+    </div>
+    <div class="modal-right">
+      <h3>Bondpaper</h3>
+      <p class="modal-rtu">RTU</p>
+      <div class="star">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <p class="modal-desc">Premium A4 bondpaper, ideal for printing, copying, and official documents.</p>
+      <p class="modal-price">₱120.00</p>
+
+      <label>Size</label>
+      <select id="bondpaper-size">
+        <option>Legal</option>
+        <option>A4</option>
+        <option>Letter</option>
+      </select>
+
+      <label>Quantity</label>
+      <input type="number" id="bondpaper-qty" min="1" value="1">
+
+      <button class="add-cart" onclick="addToCartFromModal({
+          id:'bondpaper',
+          name:'Bondpaper',
+          price:120,
+          image:document.getElementById('bondpaper-main').src,
+          qty:parseInt(document.getElementById('bondpaper-qty').value)
+      })">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+  <!-- End of modals -->
+
+  <script src="shop.js"></script>
+
+  <!-- Toast Notification -->
+  <div id="toast" style="
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #333;
+      color: #fff;
+      padding: 14px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease, transform 0.4s ease;
+      transform: translateY(20px);
+      z-index: 10000;
+" ></div>
+
+<div class="copyright">
+        <p>© 2025, Surfing | Ecommerce Website</p>
+    </div>
+
+</body>
+</html>
