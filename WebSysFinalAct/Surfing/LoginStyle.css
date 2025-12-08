@@ -1,0 +1,164 @@
+/* PAGE BACKGROUND */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image:
+        linear-gradient(to bottom, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 95%),
+        url('IMG/RTU_Pasig.JPG');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: "Poppins", sans-serif;
+}
+
+/* LOGIN BOX */
+.wrapper {
+    width: 430px;                /* FIXED WIDTH */
+    background: #e3e6f3;
+    padding: 40px;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* FORM VISIBILITY CONTROL */
+.form-box {
+    display: none;
+}
+.form-box.login {
+    display: block;
+}
+.wrapper.active .form-box.login {
+    display: none;
+}
+.wrapper.active .form-box.register {
+    display: block;
+}
+
+/* TITLE */
+.form-box h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* INPUT CONTAINER */
+.input-box {
+    position: relative;
+    width: 100%;
+    margin: 25px 0;
+}
+
+/* INPUT */
+.input-box input {
+    width: 90%;
+    padding: 15px 45px 15px 14px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background: #fff;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* FLOATING LABEL */
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    color: #666;
+    transition: .3s;
+    pointer-events: none;
+}
+
+.input-box input:focus ~ label,
+.input-box input:not(:placeholder-shown) ~ label {
+    top: -7px;
+    left: 10px;
+    font-size: 0.75rem;
+    background: #e3e6f3;
+    padding: 0 5px;
+    color: #333;
+}
+
+/* EYE ICON */
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #444;
+    font-size: 1.3rem;
+}
+
+/* REMEMBER + FORGOT */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 20px;
+    font-size: 0.9rem;
+}
+
+/* BUTTON */
+.btn {
+    width: 100%;
+    padding: 14px;
+    background: #1a1a1a;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #333;
+}
+
+/* SWITCH LOGIN/REGISTER */
+.login-register {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+.login-register a {
+    font-weight: 600;
+}
+
+/* MOBILE FIX */
+@media (max-width: 480px) {
+    .wrapper {
+        width: 90%;
+        padding: 32px;
+    }
+}
+
+.msg {
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.msg.error {
+    background: #ffcccc;
+    color: #a30000;
+    border: 1px solid #ff8080;
+}
+
+.msg.success {
+    background: #d4f8d4;
+    color: #006600;
+    border: 1px solid #8ce68c;
+}
+
