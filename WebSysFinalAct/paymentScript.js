@@ -22,6 +22,53 @@ const cardInputs = document.getElementById('card-inputs');
         window.onload = function() {
             toggleCardInputs();
         };
+// FOR TRANSFERRING CART ITEMS TO PAYMENT PAGE
+function loadCheckoutItems() {
+    const orderContainer = document.getElementById('order-items-container');
+    const subtotalEl = document.getElementById('checkout-subtotal');
+    const totalEl = document.getElementById('checkout-total');
+
+    if (!orderContainer || !subtotalEl || !totalEl) return;
+
+    const checkoutItems = JSON.parse(localStorage.getItem('checkoutItems')) || [];
+    
+    orderContainer.innerHTML = '';
+    let total = 0;
+
+    if (checkoutItems.length === 0) {
+        orderContainer.innerHTML = '<p>No items selected for checkout.</p>';
+        subtotalEl.innerText = '₱0.00';
+        totalEl.innerText = '₱0.00';
+        return;
+    }
+
+    checkoutItems.forEach(item => {
+        const itemTotal = item.price * item.qty;
+        total += itemTotal;
+
+        
+        let details = '';
+        if (item.size) details += ` [${item.size}]`;
+        if (item.color) details += ` [${item.color}]`;
+        if (item.type) details += ` [${item.type}]`;
+        if (item.style) details += ` [${item.style}]`;
+
+        const itemHTML = `
+            <div class="order-item">
+                <span>${item.name} ${details} (x${item.qty})</span>
+                <span>₱${itemTotal.toFixed(2)}</span>
+            </div>
+        `;
+        orderContainer.innerHTML += itemHTML;
+    });
+
+    
+    subtotalEl.innerText = '₱' + total.toFixed(2);
+    totalEl.innerText = '₱' + total.toFixed(2);
+}
+
+
+window.addEventListener('load', loadCheckoutItems);
 
 // For showing "order confirmed" message / Blur function
 
@@ -30,6 +77,10 @@ function showOrderConfirmation() {
     if (confirmation) {
         confirmation.style.display = 'flex';
         document.body.classList.add('blur-active');
+     // Generate random reference no.
+     const refNo = Math.floor(Math.random() * 1000000);
+        const refEl = document.querySelector('.confirmation-ref');
+        if(refEl) refEl.innerText = 'Ref. No. ' + refNo;
     }
 }
 
@@ -264,4 +315,5 @@ function ValidateForm() {
     } else {
         document.querySelector('.billing-form').scrollIntoView({ behavior:'smooth'});
     }
+
 }
