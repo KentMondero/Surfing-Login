@@ -183,12 +183,26 @@ function updateTotal(){ total=0; document.querySelectorAll('#cart-table tbody tr
 }); document.getElementById('cart-total').textContent=total.toFixed(2); }
 
 // Checkout
-function checkout(){
-  if(total===0){ showPopup("Please select items to buy today!"); return; }
-  showPopup("Checkout successful! Total: ₱"+total.toFixed(2));
-  document.querySelectorAll('#cart-table tbody tr').forEach((row,i)=>{ if(row.querySelector('.buy-today').checked) cart.splice(i,1); });
-  saveCart(); renderCart();
+function proceedToCheckout() {
+  const selectedItems = [];
+  
+  
+  document.querySelectorAll('#cart-table tbody tr').forEach((row, index) => {
+    
+    if(row.querySelector('.buy-today').checked) {
+      
+      
+      selectedItems.push(cart[index]);
+    }
+  });
+  if (selectedItems.length === 0) {
+    showPopup("Please select items to buy today!");
+    return;
+  }
+  localStorage.setItem('checkoutItems', JSON.stringify(selectedItems));
+  window.location.href = 'payment.html';
 }
+
 
 // Select/unselect all
 function toggleSelectAll(value){ document.querySelectorAll('.buy-today').forEach(cb=>cb.checked=value); updateTotal(); }
