@@ -119,29 +119,15 @@
             <div class="order-summary-box">
                 <h3>Order Summary</h3>
                 
-                <div class="order-products">
-                    <div class="order-item">
-                        <span>ID LANYARD (x1)</span>
-                        <span>₱85.00</span>
-                    </div>
-                    <div class="order-item">
-                        <span>CED T-Shirt (2023) (x1)</span>
-                        <span>₱310.00</span>
-                    </div>
-                    <div class="order-item">
-                        <span>SHS Uniform (x1)</span>
-                        <span>₱1200.00</span>
-                    </div>
-                    <div class="order-item">
-                        <span>Mechanical Pencil (x2)</span>
-                        <span>₱46.00</span>
-                    </div>
+                <div class="order-products" id="order-items-container">
+
+                    <p>Loading items...</p>
                 </div>
 
                 <div class="order-total">
                     <div class="total-row">
                         <strong>Subtotal</strong>
-                        <span>₱1641.00</span>
+                        <span id="checkout-subtotal">₱0.00</span>
                     </div>
                     <div class="total-row">
                         <strong>Shipping</strong>
@@ -149,7 +135,7 @@
                     </div>
                     <div class="total-row final-total">
                         <strong>Total</strong>
-                        <strong>₱1641.00</strong>
+                        <strong id="checkout-total">₱0.00</strong>
                     </div>
                 </div>
 
@@ -231,3 +217,4 @@
 </body>
 
 </html>
+
